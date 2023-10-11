@@ -220,7 +220,7 @@ def Proxys():
             Proxys()
 
 def cuiscreen():
-    global hits, bad, twofa, cpm, cpm1, retries, checked
+    global hits, bad, twofa, cpm, cmp1, retries, checked
     os.system('cls')
     cmp1 = cpm
     cpm = 0
@@ -230,6 +230,7 @@ def cuiscreen():
     print(f" [{bad}] Bad")
     print(f" [{twofa}] 2FA")
     print(f" [{retries}] Retries")
+    print(f" [{cmp1*60}] Cpm")
     time.sleep(2)
     utils.set_title(f"Plq Microsoft Checker | Checked: {checked}\{len(combo)}  -  Good: {hits}  -  Bad: {bad}  -  2FA: {twofa}  -  Cpm: {cmp1*60}  -  Retries: {retries}")
     threading.Thread(target=cuiscreen, args=()).start()
